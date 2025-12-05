@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -52,10 +51,10 @@ export default function Hero() {
             <div className="relative h-[300px] lg:h-[450px] w-full overflow-hidden rounded-2xl">
                  {/* Using a Pexels placeholder as requested, or your local image */}
                  {/* Replace src with "/hero.webp" if you prefer your original image */}
-                <Image 
+                <img
                   src="https://images.pexels.com/photos/8613312/pexels-photo-8613312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  layout="fill"
-                  objectFit="cover"
+                  
+                  
                   alt="Happy kids playing"
                   priority
                 />

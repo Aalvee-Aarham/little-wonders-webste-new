@@ -23,7 +23,7 @@ export default function GalleryImage({ number, color }: GalleryProps) {
           width={500}
           height={400} // Aspect ratio approximation
           layout="responsive"
-          objectFit="cover"
+          
           alt={`Little Wonders Gallery ${number}`}
           className="transition-transform duration-700 group-hover:scale-110"
           loading="lazy"

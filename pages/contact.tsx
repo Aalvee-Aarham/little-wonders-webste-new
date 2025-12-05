@@ -224,10 +224,10 @@ function BranchSection({ name, address, phones, email, mapSrc, theme, imageFolde
                 onClick={() => setSelectedImage(img.src)}
                 className="cursor-pointer group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-gray-200"
               >
-                <Image 
+                <img
                   src={img.src} 
-                  layout="fill" 
-                  objectFit="cover" 
+                   
+                   
                   alt={`${name} gallery ${img.id}`}
                   className="transition-transform duration-700 group-hover:scale-110"
                 />
@@ -266,10 +266,9 @@ function BranchSection({ name, address, phones, email, mapSrc, theme, imageFolde
                 className="relative w-full max-w-5xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl"
                 onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image
             >
-                <Image 
+                <img
                     src={selectedImage}
-                    layout="fill"
-                    objectFit="contain"
+                    
                     alt="Gallery Fullscreen"
                 />
             </motion.div>

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
-import Image from 'next/image'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -43,14 +42,10 @@ function HeroSection() {
       
       {/* 1. FULL WIDTH BACKGROUND IMAGE (Flipped) */}
       <div className="absolute inset-0 z-0">
-        <Image 
+        <img 
           src="/hero.webp" 
-          layout="fill"
-          objectFit="cover"
           // Using 'center center' here ensures the full image is visible
-          objectPosition="center center" 
           alt="Little Wonders Banner"
-          priority
           // Flipped image (scale-x-[-1]) and Slow zoom effect
           className="transition-transform scale-x-[-1] duration-[20s] hover:scale-105" 
         />
@@ -129,13 +124,12 @@ function MissionSection() {
                whileHover={{ scale: 1.02 }}
                className="relative z-10 bg-white p-3 rounded-[3rem] shadow-xl border-b-8 border-gray-100"
              >
-                <Image 
+                <img 
                   width={720} 
                   height={600} 
                   className="rounded-[2.5rem]" 
                   alt="Mission" 
-                  src="/public/mission.webp"
-                  objectFit='cover'
+                  src="/mission.webp"
                 />
              </motion.div>
           </div>
@@ -303,12 +297,10 @@ function PolaroidCard({ number }) {
         <div className={`absolute -top-3 left-1/2 -translate-x-1/2 w-24 h-8 ${randomTape} opacity-80 rotate-[-2deg] shadow-sm z-10`}></div>
 
         <div className="relative overflow-hidden bg-gray-100 aspect-[4/3]">
-           <Image
+           <img
             src={`/ALBUM/image (${number}).webp`}
             width={500}
             height={400}
-            layout="responsive"
-            objectFit="cover"
             alt={`Little Wonders Memory ${number}`}
             className="group-hover:scale-110 transition-transform duration-700"
             loading="lazy"

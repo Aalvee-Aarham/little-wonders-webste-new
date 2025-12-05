@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Nav from '../components/nav'; 
 import Footer from "../components/footer";
-import Image from "next/image";
 import { motion } from "framer-motion"; 
 import { Heart, BookOpen, Users, Star, Quote } from "lucide-react";
 
@@ -201,11 +200,9 @@ function FounderSection({ img, name, title, text, align }) {
             <div className="w-full lg:w-1/2 flex justify-center">
                 <div className="relative w-72 h-72 md:w-96 md:h-96">
                     <div className={`absolute inset-0 bg-gradient-to-tr ${isLeft ? 'from-purple-400 to-pink-400' : 'from-teal-400 to-blue-400'} rounded-[2rem] rotate-6 opacity-20`}></div>
-                    <Image 
+                    <img 
                         src={img} 
                         alt={name}
-                        layout="fill"
-                        objectFit="cover"
                         className="rounded-[2rem] shadow-2xl relative z-10"
                     />
                 </div>
@@ -239,10 +236,8 @@ function TeamCard({ staff_name, position, view }) {
         >
             <div className={`relative w-32 h-32 rounded-full p-1 mb-6 ${bg}`}>
                 <div className="w-full h-full rounded-full overflow-hidden relative bg-white">
-                    <Image 
+                    <img 
                         src={`/Team/${staff_name}.webp`} 
-                        layout="fill"
-                        objectFit="cover"
                         alt={staff_name}
                         className="group-hover:scale-110 transition-transform duration-500"
                     />

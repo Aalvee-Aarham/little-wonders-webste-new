@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Clock, Sun, BookOpen, Music, Home, Users, Heart, 
@@ -191,10 +190,10 @@ export default function Feature() {
                 className={`bg-white p-3 rounded-[2rem] shadow-xl border-b-8 ${item.color} flex flex-col`}
               >
                 <div className="relative h-56 w-full rounded-[1.5rem] overflow-hidden mb-4 bg-gray-100">
-                   <Image 
+                   <img
                     src={item.img} 
-                    layout="fill" 
-                    objectFit="cover" 
+                     
+                     
                     alt={item.title}
                     className="hover:scale-110 transition-transform duration-700 ease-in-out"
                   />
@@ -267,7 +266,7 @@ export default function Feature() {
               >
                  <div className="flex flex-col md:flex-row h-full">
                     <div className="w-full md:w-1/2 h-64 md:h-auto relative">
-                      <Image src={item.img} layout="fill" objectFit="cover" alt={item.t} />
+                      <img src={item.img}   alt={item.t} />
                     </div>
                     <div className="w-full md:w-1/2 p-8 flex flex-col justify-center items-start">
                       <div className="p-4 bg-white rounded-2xl shadow-sm text-gray-800 mb-4 group-hover:rotate-12 transition-transform">
