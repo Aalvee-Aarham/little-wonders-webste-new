@@ -134,7 +134,7 @@ function MissionSection() {
                   height={600} 
                   className="rounded-[2.5rem]" 
                   alt="Mission" 
-                  src="/mission.webp"
+                  src="/public/mission.webp"
                   objectFit='cover'
                 />
              </motion.div>
