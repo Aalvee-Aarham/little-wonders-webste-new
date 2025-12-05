@@ -6,4 +6,4 @@ module.exports = {
     domains: ['images.pexels.com'],
   },
 }
-
+//add images.pexels.com
