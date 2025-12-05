@@ -11,7 +11,6 @@ import {
 // Replace these with your actual imports
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { Banner } from "../components/banner"; 
 
 // --- Animation Variants ---
 const floatVariant = {
